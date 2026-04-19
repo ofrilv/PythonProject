@@ -10,4 +10,4 @@ def test_search_menu(setup_playwright):
     page.keyboard.press("Enter")
 
     search_button = page.locator('[class="product-grid-product-info__main-info"]')
-    print("ccc")
+    print("Shirt appears in search")
