@@ -11,5 +11,7 @@ def test_search_adv(setup_playwright):
     def test_search_help(setup_playwright):
         page = setup_playwright
         page.goto("https://www.nike.com/en")
-        help_button= page.locator('[class="nds-text css-101v3r5 appearance-body3Strong color-primary weight-regular"]').click()
-
+        help_button= page.locator('[role="presentation"]')
+        help_button.click()
+        search_button= page.locator('[id="searchInput"]').click()
+        search_button.fill("shirt")
