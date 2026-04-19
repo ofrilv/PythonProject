@@ -18,13 +18,10 @@ with sync_playwright() as p:
 
 
 
-    drop_down_sort= page.locator("[class='product_sort_container']")
-    #drop_down_sort.select_option("index=2)
-    drop_down_sort.select_option(label="price (low to high)")
+    drop_down_sort= page.locator('[class="product_sort_container"]')
+    drop_down_sort.select_option(index=3)
 
-
-
-    print ("end test")
+    print("end test")
     browser.close()
 
 
