@@ -1,6 +1,6 @@
 
 
-from playwright_106.page_object_nike.pages.page_nike_by_city import PageNikeCity
+from playwright_106.page_object_nike.pages.page_nike_city import PageNikeCity
 from playwright_106.page_object_nike.pages.page_nike_link import PageNikeLink
 from playwright_106.page_object_nike.pages.page_search_nike import PageSearchNike
 
