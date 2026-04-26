@@ -20,3 +20,4 @@ def test_zara_kids_button(setup_playwright_zara_search):
     page = setup_playwright_zara_search
     page.goto("https://www.zara.com/il/en/search/home")
     page_zara_kids_button= PageZara_kids_button(page)
+    print("test end")
