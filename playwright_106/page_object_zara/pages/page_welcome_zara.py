@@ -4,7 +4,7 @@ class PageWelcomeZara ():
         self.page = page
 
     def set_zara_search(self):
-        self.page.goto("conftest.py")
+        self.page.goto("https://www.zara.com/il/en/search/home")
         search_bnt = self.page.locator('[type="search"]')
         search_bnt.click()
         search_bnt.fill("Shirt")
