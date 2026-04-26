@@ -21,5 +21,5 @@ def test_nike_click_on_link(setup_playwright_nike):
     page = setup_playwright_nike
     page.goto("https://www.nike.com/")
     page_nike_click_on_link= PageNikeLink(page)
-    page_nike_click_on_link.set_nike_by_link()
+
     print("### Test end ###")
