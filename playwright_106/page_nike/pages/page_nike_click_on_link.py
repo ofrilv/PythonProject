@@ -7,5 +7,10 @@ class PageNikeLink ():
         self.page.goto("https://www.nike.com/en")
         men_button = self.page.locator("[href='https://www.nike.com/men']")
         men_button.click()
+        assert "MEN" in self.page.url.lower()
+
         women_button = self.page.locator("[href='https://www.nike.com/women']")
         women_button.click()
+        assert "WOMEN" in self.page.url.lower()
+
+
