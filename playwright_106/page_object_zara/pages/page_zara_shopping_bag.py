@@ -10,7 +10,7 @@ class PageZaraShoppingBag ():
         self.page.goto("https://www.zara.com/il/en/search/home")
 
         shopping_button = self.page.locator("[class='layout-actionable link']").all()[0]
-        # shopping_button = page.locator("[class*='layout-actionabl']").all()[0]
+
 
         shopping_button_text = shopping_button.inner_text()
         index = shopping_button_text.index("bag")
