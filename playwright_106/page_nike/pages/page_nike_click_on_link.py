@@ -4,13 +4,14 @@ class PageNikeLink ():
         self.page = page
 
     def set_nike_by_link(self):
-        self.page.goto("https://www.nike.com/en")
-        men_button = self.page.locator("[href='https://www.nike.com/men']")
-        men_button.click()
-        assert "MEN" in self.page.url.lower()
 
-        women_button = self.page.locator("[href='https://www.nike.com/women']")
-        women_button.click()
-        assert "WOMEN" in self.page.url.lower()
+        men_button = self.page.get_by_role("link", name="Men").first.click()
+
+        assert "men" in self.page.url.lower()
+
+        women_button = self.page.get_by_role("link", name="Women").last.click()
+
+
+        assert "women" in self.page.url.lower()
 
 
